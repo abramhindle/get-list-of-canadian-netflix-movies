@@ -1,4 +1,5 @@
 START=$1
+rm cj.txt
 #curl https://www.allflicks.net/canada/ --cookie-jar cj.txt  -H 'Host: www.allflicks.net' -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Referer: https://www.allflicks.net/canada/' > /dev/null 2>/dev/null
 IDENTIFIER=`curl https://www.allflicks.net/canada/ --cookie-jar cj.txt  -H 'Host: www.allflicks.net' -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Referer: https://www.allflicks.net/canada/' | fgrep identifier | sed  -e 's/^.*identifier=//' | sed -e 's/".*$//'`
 
