@@ -1,3 +1,4 @@
+# this was output from a shell for-loop. Don't judge.
 echo 0; sleep 1; bash netflix.sh 0 > netflix-0.json
 echo 100; sleep 1; bash netflix.sh 100 > netflix-100.json
 echo 200; sleep 1; bash netflix.sh 200 > netflix-200.json
