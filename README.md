@@ -1,3 +1,15 @@
+# Intro
+
+Get a list of netflix movies in Canada.
+
+````
+
+bash getlist.sh
+python3 titles.py | tee titles.txt
+
+
+````
+
 ## getlist.sh
 
 This downloads a bunch of pages of json of netflix movies.
